@@ -1,0 +1,519 @@
+*{
+margin:0;
+padding:auto;
+font-family: 'Nunito', sans-serif;
+/*font-family: 'Truculenta', sans-serif;*/
+box-sizing: border-box;
+}
+
+.border{
+    border: 2px solid black;
+}
+.logo img{
+    width:100px;
+    height: 100px;
+    
+}
+.container-grid{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 132px auto auto auto;
+
+}
+
+.header{
+    grid-area: header;
+    background-color: #673398;
+}
+.main-home{
+    grid-area: main;
+    background-color: #fff;
+}
+
+.testimonios{
+    grid-area: section;
+    background-color: #fff;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: #673398;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 16px;;
+}
+
+/*HEADE*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 24px;
+}
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.nav-bar ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-bar ul li{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-bar ul li a{
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px;
+}
+.nav-bar a:hover{
+    line-height: 2px;
+    color:#FFCC01;
+    font-weight: 500;
+}
+
+/*FIN DE HEADER*/
+
+/*FOOTER*/
+.icono{
+    text-decoration: none;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.contactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.contactos-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.contactos a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px;
+    
+}
+.icono img{
+    width: 25px;
+    height: 25px;
+   
+}
+.logo-foo img{
+    width:120px;
+    height: 120px;
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 5rem;
+    font-weight: 500;
+    color: #FF3366;
+}
+h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+    color: #FF3366;
+    text-align: center;
+}
+h3{
+    
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+    color: #FF3366;
+    
+}
+h4{
+   
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #663399;
+}
+h5{
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+}
+/*FIN DE FOOTER*/
+
+/*MAIN*/
+/*banner-area*/
+.banner{
+    position: relative;
+    width: 100%;
+    background: url(../assets/img/banner-home.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    display: table;
+    overflow: hidden;
+}
+.container-banner{
+   width: 100%;
+   vertical-align: middle;
+   display: table-cell;
+        
+}
+
+.contain-info {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.blanco-titulo {
+    font-family: 'Nunito', sans-serif;
+    font-size: 56px;
+    color:#fff;
+    font-weight: 600;
+}
+
+.blanco-sub{
+    color: black;;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 16px;
+}
+.button {
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid #FF3366;
+    padding: 8px 24px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color:#fff;
+ 
+}
+.button:hover{
+    background-color:#FF3366; 
+}
+
+
+/*banner-area-fin*/
+
+/*quienes somos*/
+
+.quienes{
+    margin: 16px 128px 16px 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow:0 0 10px 0 #cacaca;
+    padding: 8px;
+    
+}
+.quiene-somos{
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+}
+/*fin quienes somos*/
+
+/*fin que ofrecemos*/
+.contenedor-ofrecemos{
+    margin: 16px 128px 16px 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 0;
+}
+.contenedor-card-2{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.contenedor-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 250px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow:0 0 10px 0 #cacaca;
+    transition: 0.2s;
+}
+
+.iconos-personalizados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+    
+}
+.bajada-card-ofrecemos h4{
+   font-family: 'Nunito', sans-serif;
+   font-weight: 600;
+    font-size: 1.3rem;
+    color: #FF3366; 
+   text-align: center;
+}
+.bajada{
+    font-size: 1rem;
+}
+
+.contenedor-card:hover{
+    width: 265px;
+    background-color: rgba(255, 204, 1, 1);
+}
+/*fin que ofrecemos*/
+
+/*inicio andan diciendo*/
+.testimonios{
+    margin: 16px 128px 16px 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    
+}
+.contenedor-tes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+   
+}
+
+.contenedor-testimonio{
+   padding: 0 16px;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    background-color: #663399;
+    border-radius: 16px;
+    transition: all 500ms ease;
+}
+
+.alumnos img{
+    width: 355px;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+        
+}
+
+.textos-alumnos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.n-alumnos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.testimonio1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 16px;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.contenedor-testimonio:hover{
+    transform: scale(1.1);
+    background-color:#FF3366; 
+}
+/*fin andan diciendo*/
+/*FIN DE HOME*/
+
+/*INICIA STAFF*/
+/*banner-staff*/
+/*fin de banner staff*/
+.banner-staff{
+    background-color: #663399;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.container-banner{
+    width: 100%;
+   vertical-align: middle;
+   display: table-cell;
+}
+.truculenta-h1{
+    font-family:'Truculenta', sans-serif;
+    font-size: 6rem;
+    display: flex;
+    transform: rotate(-90deg);
+
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 390px){
+    
+    body{
+        background-color: blue;
+    }
+    
+    .container-grid{
+    display: grid;
+    min-width: 100%;    
+    grid-template-columns: 100%;
+    flex-wrap: wrap;
+ }
+    
+    .quienes{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 8px;
+    
+}
+    .que-ofrecemos{
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        border-radius: none;
+        box-shadow: none;
+        background-color: #fff;
+        margin: 0px;
+        padding: 8px;
+
+}
+    .logo img{
+    width:50px;
+    height: 50px;
+    }
+    
+    .nav-bar ul li a{
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 8px;
+}
+    .banner{
+        grid-template-areas: "section";
+        grid-template-columns: 100%;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        }
+    .banner{
+        grid-area: section;
+    }
+    
+    .quienes{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow:0 0 10px 0 #cacaca;
+    padding: 8px;
+    }
+    .contenedor-ofrecemos{
+    margin: auto;
+    padding: 16px 0;
+    }
+  .contenedor-card-2{
+   display: flex;
+   justify-content:center;
+   width: 100%;
+   margin: 8px 0;
+
+    }
+    
+   .contenedor-card{
+    width: 90%;
+    padding: 16px 0;
+    border-radius: 8px;
+    box-shadow:0 0 10px 0 #cacaca;
+    transition: 0.2s;
+}            
+    .bajada-card-ofrecemos{
+        display: flex;
+        flex-direction:column;
+    }     
+    
+    .bajada-card-ofrecemos h4{
+        font-size: 2rem;
+    }     
+    
+    .bajada{
+    font-size: 2rem;
+    text-align: center;
+    padding: 8px;    
+}
+    .contenedor-card:hover{
+    width: 100%;
+    background-color: rgba(255, 204, 1, 1);
+}
+    .testimonios{
+    margin:auto;
+    width: 100%;
+        
+}
+    .contenedor-tes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0;    
+    
+   
+}
+    
